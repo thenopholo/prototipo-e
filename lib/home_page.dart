@@ -1,4 +1,5 @@
 import 'package:eveo_app/botao_home.dart';
+import 'package:eveo_app/botao_retangular_home.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -71,19 +72,19 @@ class _HomePageState extends State<HomePage> {
                   crossAxisCount: 2,
                   children: [
                     BotaoHome(
-                      icon: Icons.circle,
+                      icon: Icons.emoji_emotions_outlined,
                       title: 'Terapia com\nPsicológo',
                     ),
                     BotaoHome(
-                      icon: Icons.abc_outlined,
+                      icon: Icons.monetization_on_outlined,
                       title: 'Recibo de\nPagamentos',
                     ),
                     BotaoHome(
-                      icon: Icons.ac_unit,
+                      icon: Icons.document_scanner_outlined,
                       title: 'Documentos\nPessoais',
                     ),
                     BotaoHome(
-                      icon: Icons.access_alarm_outlined,
+                      icon: Icons.task_outlined,
                       title: 'Gerenciador de\nTarefas',
                     ),
                   ],
@@ -93,42 +94,16 @@ class _HomePageState extends State<HomePage> {
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Column(
                   children: [
-                    Container(
-                      color: Colors.white,
-                      margin: EdgeInsets.only(bottom: 8),
-                      child: ListTile(
-                        leading: Icon(Icons.person),
-                        title: Text('Bla bla bla bla'),
-                        trailing: Icon(Icons.arrow_forward),
-                      ),
-                    ),
-                    Container(
-                      color: Colors.white,
-                      margin: EdgeInsets.only(bottom: 8),
-                      child: ListTile(
-                        leading: Icon(Icons.person),
-                        title: Text('Bla bla bla bla'),
-                        trailing: Icon(Icons.arrow_forward),
-                      ),
-                    ),
-                    Container(
-                      color: Colors.white,
-                      margin: EdgeInsets.only(bottom: 8),
-                      child: ListTile(
-                        leading: Icon(Icons.person),
-                        title: Text('Bla bla bla bla'),
-                        trailing: Icon(Icons.arrow_forward_ios),
-                      ),
-                    ),
-                    Container(
-                      color: Colors.white,
-                      margin: EdgeInsets.only(bottom: 8),
-                      child: ListTile(
-                        leading: Icon(Icons.person),
-                        title: Text('Bla bla bla bla'),
-                        trailing: Icon(Icons.arrow_forward),
-                      ),
-                    ),
+                    BotaoRetangularHome(
+                        icon: Icons.star_border_outlined,
+                        title: 'Benefícios Disponíveis'),
+                    BotaoRetangularHome(
+                        icon: Icons.discount_outlined,
+                        title: 'Parcerias e Descontos'),
+                    BotaoRetangularHome(
+                        icon: Icons.feed_outlined, title: 'Feed de Notícias'),
+                    BotaoRetangularHome(
+                        icon: Icons.graphic_eq_outlined, title: 'Metas e OKR'),
                   ],
                 ),
               ),
