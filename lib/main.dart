@@ -20,12 +20,11 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: vermelho),
         useMaterial3: true,
       ),
-      home: const WelcomePage(),
-      // IntroVideo(
-      //   videoPlayerController: VideoPlayerController.asset(
-      //     'assets/videos/intro_video.mp4',
-      //   ),
-      // ),
+      home: IntroVideo(
+        videoPlayerController: VideoPlayerController.asset(
+          'assets/videos/intro_video.mp4',
+        ),
+      ),
     );
   }
 }
